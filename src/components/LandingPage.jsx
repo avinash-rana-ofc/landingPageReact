@@ -3,14 +3,14 @@ import { FaArrowUp } from "react-icons/fa";
 
 function LandingPage() {
   return (
-    <div className='w-full h-fit bg-zinc-900 pt-1'>
+    <div className='w-full h-screen bg-zinc-900 pt-1'>
         <div className="textstructure mt-40 px-20">
             {["DOE", "Directorate of Electricity","Power"].map((item, index) => {
                 return (
                         <div className="masker" key={index}>
                             <div className="w-fit flex items-end overflow-hidden" >
                                 {index === 1 && (
-                                    <div className='mr-[1vw] w-[7vw] mb-[.2vw]  rounded-md h-[4.8vw] -top-[.42vw] relative  bg-red-500'></div>
+                                    <div className='mr-[1vw] w-[7vw] mb-[.2vw]  rounded-md h-[4.8vw] -top-[.42vw] relative  bg-green-500'></div>
                                     )}
                                     <h1 className="pt-[2vw] -mb-[1vw] uppercase text-[7.2vw] leading-[.75] font-['Founders_Grotesk_X-Condensed'] font-bold">
                                         {item}
@@ -23,7 +23,7 @@ function LandingPage() {
             }
             
         </div>
-        <div className="border-t-[1px] border-zinc-700 mt-32 flex justify-between items-center py-5 px-20">
+        <div className="border-t-[1px] border-zinc-700 mt-20 flex justify-between items-center py-5 px-20">
             {["For citizen and officials use only", "Test"].map((list, index) => {
                 return <p key={index} className='text-md font-light tracking-tight leading-none'>{list}</p>
             })
